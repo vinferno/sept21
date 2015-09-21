@@ -1,0 +1,245 @@
+* {
+   font-family: sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body{
+  margin:0;
+}
+#alert{
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+#alert_ul{
+  background-color: transparent;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#name_input_box {
+  padding: 0;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  font-size: 23px;
+}
+
+ul {
+  list-style: none;
+  width: 502px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: black;
+  padding: 1px;
+ 
+  
+}
+textNode{flex:none}
+li {
+   /* background-image:url(http://www.superluigibros.com/images/super_mario_gifs.gif);
+ */
+  height: 60px;
+  width: 500px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  font-weight: 700;
+  box-sizing: border-box;
+  background-color: #efefef;
+  transition: all 0.3s;
+  border-radius: 3px;
+  margin:0;
+}
+
+.title {
+ color: white;
+ background-color: #434242 ;
+}
+.active {
+ color: white;
+ background-color: #434242 ;
+}
+.added {
+ color: white;
+ background-color:  #646262 ;
+}
+.hover{
+ color: white;
+ background-color: #A7A4A4 ;
+}
+.selected {
+ color: black;
+ background-color:  #D3D2D2 ;
+}
+.success {
+ color: black;
+ background-color:  #E9E8E8 ;
+}
+.error {
+ color: black;
+ background-color: #F2F1F1 ;
+}
+
+.base{
+ color: black;
+ background-color:  #D3D2D2 ;
+}
+
+.minus{
+    order: -5;
+  display: flex;
+  flex:none;
+  justify-content:center;
+  align-items:center;
+box-sizing:border-box;
+text-shadow:
+ -1px -1px 0 #474747   ,  
+  1px -1px 0 #474747   ,
+  -1px 1px 0 #474747   ,
+   1px 1px 0 #474747   ;
+padding: 3%;
+line-height: 0;
+float: left;
+height: 80%;
+width: 70px;
+margin: 1.75%;
+font-size: 170%;
+background-color: #b6b6b6  ;
+border: 1px solid black;
+border-radius: 10%;
+box-shadow: 
+ 0 1px 2px #fff,
+ 0 -1px 7px #666, 
+ inset 0 -1px 7px rgba(0,0,0,0.5),  
+ inset 0 10px 20px rgba(255,255,255,0.8); 
+}
+
+.minus_center{
+  height:20%;
+  width:40%;
+  background-color: #ffffff;
+  border:1px solid black;
+}
+
+.closed {
+  background-color: #818181;
+  height: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.open {
+  color:#f0f0f0;
+  background-color: #d1d1d1 ;
+  height: 145px;
+  overflow: hidden;
+  border: 2px solid black;
+  line-height: normal;
+  text-align: center;
+  padding: 10px;
+}
+
+.hidden{
+  height: 0;
+  background-color: transparent;
+}
+
+.deleted{
+ display: none;
+}
+.errordialog{
+    position:absolute;
+    width:100%;
+    border-bottom:1px solid black; 
+    background:lightyellow; 
+    left:0; top:0; 
+    padding: 3px 0; text-indent: 5px;
+    font: normal 11px Verdana;
+}
+@media screen and (max-width: 1000px){
+  ul {
+    width: 100%;
+  }
+  li {
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    line-height: 100px;
+  }
+  .open {
+    color:#1f1f1f;
+    background-color:#efefef;
+    height: 295px;
+  }
+
+ .open:hover{
+   color:#1f1f1f;
+   background-color:#d4d4d4 ;
+ }
+
+  .open button {
+  height: 50px;
+  padding: 20px 50px;
+  font-size: 20px;
+  line-height: 10px;
+  border-radius: 10px;
+  border: 1px solid #1f1f1f;
+  }
+
+p{
+  margin:0;
+  padding:0;
+}
+#name_input_box{
+  padding: 15px;
+  width: 90%;
+  height:15px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom:10px;
+}
+.minus{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+box-sizing:border-box;
+text-shadow:
+ -1px -1px 0 #474747   ,  
+  1px -1px 0 #474747   ,
+  -1px 1px 0 #474747   ,
+   1px 1px 0 #474747   ;
+padding: 3%;
+line-height: 0;
+float: left;
+height: 80%;
+width: 70px;
+margin: 1.75%;
+font-size: 170%;
+background-color: #b6b6b6  ;
+border: 1px solid black;
+border-radius: 10%;
+box-shadow: 
+ 0 1px 2px #fff,
+ 0 -1px 7px #666, 
+ inset 0 -1px 7px rgba(0,0,0,0.5),  
+ inset 0 10px 20px rgba(255,255,255,0.8); 
+}
+
+.minus_center{
+  height:40%;
+  width:70%;
+  background-color: #ffffff;
+  border:1px solid black;
+}
+
+
+}
